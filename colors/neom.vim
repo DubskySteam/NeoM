@@ -10,8 +10,6 @@
 " Last Change:  2023-12-27
 "
 
-hi clear
-
 " General colors
 let s:bg = "#1c1c1c"
 let s:fg = "#F7F7F7"
