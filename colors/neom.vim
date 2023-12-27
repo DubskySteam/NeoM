@@ -45,7 +45,7 @@ execute "hi WarningMsg  guifg=" . s:green
 "Misceallaneous
 execute "hi MatchParen  guifg=" . s:cyan .      " guibg=" . s:bg
 execute "hi NonText     guifg=" . s:bg .        " guibg=" . s:bg
-execute "hi Todo        guifg=" . s:bg .       " guibg=" . s:yellow
+execute "hi Todo        guifg=" . s:bg .        " guibg=" . s:yellow
 
 "Preprocessor
 execute "hi PreProc     guifg=" . s:green
@@ -61,7 +61,7 @@ execute "hi Visual      guifg=" . s:bg .        " guibg=" . s:pink
 
 " Pmenu
 execute "hi Pmenu       guibg=" . s:bg .        " guifg=" . s:fg
-execute "hi PmenuSel    guibg=" . s:red .       " guifg=" . s:red
+execute "hi PmenuSel    guibg=" . s:cyan .      " guifg=" . s:bg
 execute "hi PmenuSbar   guibg=" . s:bg .        " guifg=" . s:fg
 execute "hi PmenuThumb  guibg=" . s:bg .        " guifg=" . s:fg
 
@@ -77,3 +77,10 @@ execute "hi NvimTreeFolderName      guifg=" . s:pink
 "Harpoon
 execute "hi HarpoonBorder           guifg=" . s:cyan
 execute "hi HarpoonWindow           guifg=" . s:pink
+
+"LSP Zero
+execute "hi LspDiagnosticsDefaultError         guifg=" . s:red
+execute "hi LspDiagnosticsDefaultWarning       guifg=" . s:yellow
+execute "hi LspFloatWinBorder       guifg=" . s:cyan
+execute "hi LspFloatWinNormal       guifg=" . s:fg
+execute "hi LspFloatWinBorder       guifg=" . s:cyan
