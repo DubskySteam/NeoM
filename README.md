@@ -1,30 +1,43 @@
 # NeoM
 
-```
 This is a personal colorscheme project that will be updated from time to time until I'm satisfied with it.
-```
+The goal is to have a neon colorscheme that is easy on the eyes (as good as possible) and has a good contrast.
 
 ## Installation
+**Change branch to "dev" if you want the latest version**
 
-###  Packer.nvim
+### Packer
+
 
 ```lua
 use {
         'dubskysteam/neom',
-        branch = 'main', -- You can change this to dev if you want to use the lastest version
+        branch = 'main',
         config = function()
             vim.cmd('colorscheme neom')
         end
     }
 ```
 
+### Vim-Plug
+
+```lua
+Plug 'dubskysteam/neom', {
+    'branch': 'main',
+    'do': { -> vim.cmd('colorscheme neom') }
+}
+```
+
 ## TODO
 
 - [ ] Re-write in lua
-- [ ] Improve contrasts (colorscheme in general)
-- [ ] Include more plugin specific highlights (Mason, Telescope, LSP etc.)
+- [ ] Fix specific language highlights (C, Python, Java etc.)
+- [X] Include more plugin specific highlights (Mason, Telescope, LSP etc.)
+- [X] Improve contrasts (Will never really be finished)
 
 ## Screenshots
 
+**Using LSPZ + Rust**
 ![Screenshot](images/rust.png)
-![Screenshot](images/html.png)
+**Using Telescope**
+![Screenshot](images/telescope.png)
